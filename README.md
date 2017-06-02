@@ -19,7 +19,7 @@ Web服务器根据接收到的请求后，向客户端发送响应信息。
 
 5、支持B/S及C/S模式
 
-#HTTP之URL
+# HTTP之URL
 URL是一种特殊类型的URI
 http://www.aspxfans.com:8080/news/index.asp?boardID=5&ID=24618&page=1#name
 一个完整的URL包括一下部分：
@@ -40,7 +40,7 @@ http://www.aspxfans.com:8080/news/index.asp?boardID=5&ID=24618&page=1#name
 7、参数部分：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。本例中的参数部分为“boardID=5&ID=24618&page=1”。
 参数可以允许有多个参数，参数与参数之间用“&”作为分隔符。
 
-#URI和URL的区别
+# URI和URL的区别
 
 URI，是uniform resource identifier，统一资源标识符，用来唯一的标识一个资源。
 URI一般由三部组成：
@@ -60,7 +60,7 @@ URI 属于 URL 更高层次的抽象，一种字符串文本标准。
 
 二者的区别在于，URI 表示请求服务器的路径，定义这么一个资源。而 URL 同时说明要如何访问这个资源（http://）。
 
-#HTTP之请求消息Request
+# HTTP之请求消息Request
 
 客户端发送一个HTTP请求到服务器的请求消息包括以下格式：
 
@@ -110,7 +110,7 @@ name=Professional%20Ajax&publisher=Wiley
 第四部分：请求数据，第八行。
 
 
-#HTTP之响应消息Response
+# HTTP之响应消息Response
 
 一般情况下，服务器接收并处理客户端发过来的请求后会返回一个HTTP的响应消息。
 
@@ -144,7 +144,7 @@ Date:生成响应的日期和时间；Content-Type:指定了MIME类型的HTML(te
 
 空行后面的html部分为响应正文。
 
-#HTTP请求方法
+# HTTP请求方法
 
 根据HTTP标准，HTTP请求可以使用多种请求方法。
 HTTP1.0定义了三种请求方法： GET, POST 和 HEAD方法。
@@ -159,7 +159,7 @@ CONNECT     HTTP/1.1协议中预留给能够将连接改为管道方式的代理
 OPTIONS     允许客户端查看服务器的性能。
 TRACE     回显服务器收到的请求，主要用于测试或诊断。
 
-#HTTP工作原理
+# HTTP工作原理
 
 HTTP 请求/响应的步骤：
 1、客户端连接到Web服务器
@@ -196,7 +196,7 @@ Web服务器解析请求，定位请求资源。服务器将资源复本写到TC
 
 6、浏览器将该 html 文本并显示内容; 　　
 
-#http get和post的区别
+# http get和post的区别
 1. get是从服务器上获取数据，post是向服务器传送数据。
 
 2. get是把参数数据队列加到提交表单的ACTION属性所指的URL中，值和表单内各个字段一一对应，在URL中可以看到。post是通过HTTP post机制，将表单内各个字段与其内容放置在HTML HEADER内一起传送到ACTION属性所指的URL地址。用户看不到这个过程。
@@ -206,6 +206,6 @@ Web服务器解析请求，定位请求资源。服务器将资源复本写到TC
 4. get传送的数据量较小，不能大于2KB。post传送的数据量较大，一般被默认为不受限制。但理论上，IIS4中最大量为80KB，IIS5中为100KB。
 
 5. get安全性非常低，post安全性较高。但是执行效率却比Post方法好。 
-#建议：
+# 建议：
 1、get方式的安全性较Post方式要差些，包含机密信息的话，建议用Post数据提交方式；
 2、在做数据查询时，建议用Get方式；而在做数据添加、修改或删除时，建议用Post方式；
